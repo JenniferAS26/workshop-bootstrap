@@ -10,19 +10,239 @@
       href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Volkhov:wght@400;700&display=swap" 
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./src/css/styles.css">
   </head>
   <body>
-    <header>
-      <h1>Soy un titulo</h1>
-    </header>
-    <main></main>
+    <header></header>
+    <main>
+      <section class="deals-discount container-fluid pt-5">
+        <h2 class="deals-discount__title">Exclusive <span>deals & discounts</span></h2>
+        <p class="deals-discount__text my-5">Discover our fantastic early booking discounts & start planning your journey.
+        </p>
+        <div class="deals-discount__gallery-container d-flex justify-content-center gap-5">
+          <div class="deals-discount__gallery-container--card card" style="width: 18rem;">
+            <img src="./src/assets/images/deal-discount-image1.svg" class="card-img-top card-image" alt="...">
+            <div class="card-body p-4 mt-4">
+              <div class="container-fluid d-flex justify-content-between p-0">
+                <h5 class="deals-discount__gallery-container--title card-title">Madrid</h5>
+                <div class="rank d-flex justify-content-between align-items-center">
+                  <img class="rank__image" src="./src/assets/icons/star.png" alt="star icon">
+                  <span class="rank__span">4.8</span>
+                </div>
+              </div>
+              <div class="location-prices d-flex justify-content-between align-items-center">
+                <div class="location d-flex justify-content-start align-items-center">
+                  <img src="./src/assets/icons/location.png" alt="location icon">
+                  <span class="ps-4">Spain</span>
+                </div>
+                <div class="prices d-flex justify-content-between align-items-center">
+                  <span class="prices__old">$950</span>
+                  <span class="prices__current">$850</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deals-discount__gallery-container--card card" style="width: 18rem;">
+            <img src="./src/assets/images/deal-discount-image2.svg" class="card-img-top card-image" alt="...">
+            <div class="card-body p-4 mt-4">
+              <div class="container-fluid d-flex justify-content-between p-0">
+                <h5 class="deals-discount__gallery-container--title card-title">Firenze</h5>
+                <div class="rank d-flex justify-content-between align-items-center">
+                  <img class="rank__image" src="./src/assets/icons/star.png" alt="star icon">
+                  <span class="rank__span">4.5</span>
+                </div>
+              </div>
+              <div class="location-prices d-flex justify-content-between align-items-center">
+                <div class="location d-flex justify-content-start align-items-center">
+                  <img src="./src/assets/icons/location.png" alt="location icon">
+                  <span class="ps-4">Italy</span>
+                </div>
+                <div class="prices d-flex justify-content-between align-items-center">
+                  <span class="prices__old">$850</span>
+                  <span class="prices__current">$750</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deals-discount__gallery-container--card card" style="width: 18rem;">
+            <img src="./src/assets/images/deal-discount-image3.svg" class="card-img-top card-image" alt="...">
+            <div class="card-body p-4 mt-4">
+              <div class="container-fluid d-flex justify-content-between p-0">
+                <h5 class="deals-discount__gallery-container--title card-title">Paris</h5>
+                <div class="rank d-flex justify-content-between align-items-center">
+                  <img class="rank__image" src="./src/assets/icons/star.png" alt="star icon">
+                  <span class="rank__span">4.4</span>
+                </div>
+              </div>
+              <div class="location-prices d-flex justify-content-between align-items-center">
+                <div class="location d-flex justify-content-start align-items-center">
+                  <img src="./src/assets/icons/location.png" alt="location icon">
+                  <span class="ps-4">France</span>
+                </div>
+                <div class="prices d-flex justify-content-between align-items-center">
+                  <span class="prices__old">$699</span>
+                  <span class="prices__current">$599</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deals-discount__gallery-container--card card" style="width: 18rem;">
+            <img src="./src/assets/images/deal-discount-image1.svg" class="card-img-top card-image" alt="...">
+            <div class="card-body p-4 mt-4">
+              <div class="container-fluid d-flex justify-content-between p-0">
+                <h5 class="deals-discount__gallery-container--title card-title">London</h5>
+                <div class="rank d-flex justify-content-between align-items-center">
+                  <img class="rank__image" src="./src/assets/icons/star.png" alt="star icon">
+                  <span class="rank__span">4.8</span>
+                </div>
+              </div>
+              <div class="location-prices d-flex justify-content-between align-items-center">
+                <div class="location d-flex justify-content-start align-items-center">
+                  <img src="./src/assets/icons/location.png" alt="location icon">
+                  <span class="ps-4">UK</span>
+                </div>
+                <div class="prices d-flex justify-content-between align-items-center">
+                  <span class="prices__old">$850</span>
+                  <span class="prices__current">$850</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deals-discount__buttons-container d-flex justify-content-between">
+          <button class="deals-discount__buttons-container--button">
+            <img src="./src/assets/images/back-btn.png" alt="button icon">
+          </button>
+          <button class="deals-discount__buttons-container--button">
+            <img src="./src/assets/images/next-btn.png" alt="button icon">
+          </button>
+        </div>
+      </section>
+      <section class="vacation container container-fluid pt-5">
+        <div class="row info-wrapper">
+          <img src="./src/assets/icons/palmers.svg" alt="palmer image">
+          <h2 class="vacation__title">Best <span>vacation plan</span></h2>
+          <p class="vacation__text my-4">Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers! </p>
+        </div>
+        <div class="wrapper d-flex justify-content-end">
+          <button class="vacation__buttons-container--button">
+            <img src="./src/assets/images/back-btn.png" alt="button icon">
+          </button>
+          <button class="vacation__buttons-container--button ms-5">
+            <img src="./src/assets/images/next-btn.png" alt="button icon">
+          </button>
+        </div>
+        <div class="vacation__gallery-container row container-fluid d-flex justify-content-center gap-5">
+          <div class="vacation__gallery-container--card card col" style="width: 18rem;">
+            <img src="./src/assets/images/vacation-3.svg" class="card-image card-img-top" alt="...">
+            <div class="card-body p-4 mt-2">
+              <div class="container-fluid d-flex justify-content-between p-0 mt-2">
+                <h5 class="vacation__gallery-container--title card-title">Rome, Italy</h5>
+                <span class="vacation__gallery-container--text">$5,42k</span>
+              </div>
+              <div class="trip-rank d-flex justify-content-between align-items-center">
+                <div class="trip d-flex justify-content-start align-items-center">
+                  <img src="./src/assets/icons/point.svg" alt="pointer icon">
+                  <span class="ps-4">10 Days Trip</span>
+                </div>
+                <div class="rank d-flex justify-content-between align-items-center  pt-4">
+                  <img class="rank__image" src="./src/assets/icons/star.png" alt="star icon">
+                  <span class="rank__span">4.8</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vacation__gallery-container--card card col" style="width: 18rem;">
+            <img src="./src/assets/images/vacation-2.svg" class="card-image card-img-top" alt="...">
+            <div class="card-body p-4 mt-2">
+              <div class="container-fluid d-flex justify-content-between p-0 mt-2">
+                <h5 class="vacation__gallery-container--title card-title">London, UK</h5>
+                <span class="vacation__gallery-container--text">$52,42k</span>
+              </div>
+              <div class="trip-rank d-flex justify-content-between align-items-center">
+                <div class="trip d-flex justify-content-start align-items-center">
+                  <img src="./src/assets/icons/point.svg" alt="pointer icon">
+                  <span class="ps-4">07 Days Trip</span>
+                </div>
+                <div class="rank d-flex justify-content-between align-items-center  pt-4">
+                  <img class="rank__image" src="./src/assets/icons/star.png" alt="star icon">
+                  <span class="rank__span">4.7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vacation__gallery-container--card card col" style="width: 18rem;">
+            <img src="./src/assets/images/vacation-3.svg" class="card-image card-img-top" alt="...">
+            <div class="card-body p-4 mt-2">
+              <div class="container-fluid d-flex justify-content-between p-0 mt-2">
+                <h5 class="vacation__gallery-container--title card-title">Osaka, Japon</h5>
+                <span class="vacation__gallery-container--text">$5,42k</span>
+              </div>
+              <div class="trip-rank d-flex justify-content-between align-items-center">
+                <div class="trip d-flex justify-content-start align-items-center">
+                  <img src="./src/assets/icons/point.svg" alt="pointer icon">
+                  <span class="ps-4">10 Days Trip</span>
+                </div>
+                <div class="rank d-flex justify-content-between align-items-center  pt-4">
+                  <img class="rank__image" src="./src/assets/icons/star.png" alt="star icon">
+                  <span class="rank__span">4.8</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog container-fluid pt-5">
+        <div class="row py-5">
+          <h2 class="blog__title">Get update with <span>latest blog</span></h2>
+        </div>
+        <div class="blog__gallery-container row container-fluid d-flex justify-content-center gap-5">
+          <div class="blog__gallery-container--card col-2 card" style="width: 18rem;">
+            <img src="./src/assets/images/blog1.svg" alt="image" class="card-image card-img-top">
+            <div class="card-body">
+              <h5 class="card-title my-3">The Amazing Difference a Year of Travelling.</h5>
+              <p class="card-text">July 27, 2021</p>
+            </div>
+          </div>
+          <div class="blog__gallery-container--card col-2 card" style="width: 18rem;">
+            <img src="./src/assets/images/blog2.svg" alt="image" class="card-image card-img-top">
+            <div class="card-body">
+              <h5 class="card-title my-3">Travel far enough, you meet yourself.</h5>
+              <p class="card-text">July 27, 2021</p>
+            </div>
+          </div>
+          <div class="blog__gallery-container--card col-2 card" style="width: 18rem;">
+            <img src="./src/assets/images/blog3.svg" alt="image" class="card-image card-img-top">
+            <div class="card-body">
+              <h5 class="card-title my-3">How to Save Money While Visiting Africa .</h5>
+              <p class="card-text">July 27, 2021</p>
+            </div>
+          </div>
+          <div class="blog__gallery-container--card col-2 card" style="width: 18rem;">
+            <img src="./src/assets/images/blog4.svg" alt="image" class="card-image card-img-top">
+            <div class="card-body">
+              <h5 class="card-title my-3">Reflections on 5 Months of Travel: Time to Hang</h5>
+              <p class="card-text">July 27, 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="blog__buttons-container container-fluid d-flex justify-content-between align-items-center">
+          <button class="blog__buttons-container--button"></button>
+          <button class="blog__buttons-container--button active"></button>
+          <button class="blog__buttons-container--button"></button>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
