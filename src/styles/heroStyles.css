@@ -84,6 +84,7 @@ nav form.login-div button:hover{
   padding-left: 2rem;
   padding-right: 2rem;
   margin-top: 2rem;
+  font-size: 18px;
 }
 
 .discover-btn:hover{
