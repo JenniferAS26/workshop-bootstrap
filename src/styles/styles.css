@@ -12,10 +12,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  width: 100vw;
-  overflow: hidden;
-}
 /*hero Section*/
 /* nav ba */
 
@@ -52,7 +48,6 @@ nav form.login-div button:hover{
 .hero-section{
   background-color: var(--bg-color-light);
   max-width: 1920px;
-  max-height  : 999px;
   overflow: hidden;
 }
 /* Escrito */
@@ -230,6 +225,64 @@ nav form.login-div button:hover{
   color: rgb(86, 83, 83);
 }
 
-.explore_btn{
-  margin-left: 12rem;
+
+/*Explorer*/
+.container-explorer{
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 0;
+  width: 80vw;
+  margin-top: 6rem;
 }
+.explorer{
+  background: linear-gradient(to right, #ecd8ce38, #fff);
+  margin-bottom: 4rem;
+  border-radius: 5px;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.186);
+}
+.explorer div.container-fluid{
+  align-items: center;
+}
+
+.explorer span{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.718);
+}
+@media (max-width: 820px) {
+  .explorer div.row div.col{
+    margin: 7px 0;
+  }
+  .explorer p{
+    display: none;
+  }
+  .explorer div.container-fluid .col{
+    display: flex;
+    justify-content: center;
+}
+}
+
+.explorer a{
+  color: #FA7436;
+}
+.explore p{
+  font-weight: 300; 
+}
+
+.explore_btn{
+  background-color: transparent !important;
+  border: 1px solid #FA7436;
+  width: 120px;
+  font-weight: bold;
+  color: #FA7436;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.explore_btn:hover{
+  background-color: #FA7436 !important;
+  color: #fff;
+}
+
+
