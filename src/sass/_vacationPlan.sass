@@ -6,15 +6,7 @@
   height: 760px
   display: grid
   .info-wrapper 
-    width: 480px
-    margin: 0 auto
-    position: relative
-    img
-      width: 105px
-      height: 85px
-      object-fit: contain
-      position: absolute
-      right: -105px
+    @include infoWrapper(480px, 105px, 85px, -105px)
   &__title
     @include titleStyle
   &__text

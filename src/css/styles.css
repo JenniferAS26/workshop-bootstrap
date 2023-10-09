@@ -248,7 +248,22 @@ body {
 }
 
 .things {
+  height: 700px;
   background-color: #F7F8FC;
+  display: grid;
+  place-content: center;
+}
+.things .info-wrapper {
+  width: 570px;
+  margin: 0 auto;
+  position: relative;
+}
+.things .info-wrapper img {
+  width: 180px;
+  height: 130px;
+  object-fit: contain;
+  position: absolute;
+  right: -210px;
 }
 .things__title {
   text-align: center;

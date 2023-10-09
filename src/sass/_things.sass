@@ -4,7 +4,12 @@
 $url-orange: '../assets/icons/orange.svg'
 
 .things 
+  height: 700px
   background-color: $bg-color
+  display: grid
+  place-content: center
+  .info-wrapper
+    @include infoWrapper(570px, 180px, 130px, -210px)
   &__title
     @include titleStyle
   &__text
