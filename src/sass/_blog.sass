@@ -1,14 +1,11 @@
 @use 'variables' as *
+@use 'mixins' as *
 
 .blog
   width: 100%
   height: 760px
   &__title
-    text-align: center
-    font-size: 4.8rem
-    font-weight: $bold-weight
-    span
-      color: $secondary-color-orange
+    @include titleStyle
   &__gallery-container
     margin: 50px auto
     &--card  

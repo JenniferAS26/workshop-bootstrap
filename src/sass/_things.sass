@@ -1,0 +1,40 @@
+@use 'variables' as *
+@use 'mixins' as *
+
+$url-orange: '../assets/icons/orange.svg'
+
+.things 
+  background-color: $bg-color
+  &__title
+    @include titleStyle
+  &__text
+    @include textStyle
+    width: 500px
+  &__card
+    width: 370px
+    height: 278px
+    padding: 40px
+    border-radius: 8px
+    background: #FFF
+    box-shadow: 14px 24px 72px 0px rgba(102, 102, 102, 0.10)
+    row-gap: 40px
+    font-family: $font-source-2
+    background-image: url('../assets/icons/orange.svg')
+    background-repeat: no-repeat 
+    &--image
+      width: 48px
+      height: 48px
+    &--title 
+      font-size: 2.4rem
+      font-weight: $bold-weight
+      letter-spacing: 1px
+      margin-bottom: 15px
+    &--text
+      font-size: 1.5rem
+      font-weight: $regular-weight
+      color: #666666
+  .card-blue
+    background-image: url('../assets/icons/blue.svg')
+  .card-yellow
+    background-image: url('../assets/icons/yellow.svg')
+
