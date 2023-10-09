@@ -12,10 +12,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  width: 100vw;
-  /* overflow: hidden; */
-}
 /*hero Section*/
 /* nav ba */
 
@@ -83,7 +79,6 @@ nav form.login-div button:hover{
   padding-left: 2rem;
   padding-right: 2rem;
   margin-top: 2rem;
-  font-size: 18px;
 }
 
 .discover-btn:hover{
